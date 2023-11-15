@@ -1,0 +1,275 @@
+#homeHeader {
+    background-image: url(https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Banner.jpg);
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+
+    .navcont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 150vh;
+        margin: 0 auto;
+        padding-top: 30px;
+
+        .leftside {
+
+            font-size: 32px;
+        }
+
+        .rightside {
+            ul {
+                display: flex;
+                gap: 10px;
+
+                li {
+                    a {
+                        color: black;
+                        font-weight: bolder;
+                    }
+                }
+            }
+
+            display: flex;
+            gap: 20px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 10px;
+
+            .fa-bars {
+                display: none;
+            }
+
+            .fa-x {
+                display: none;
+            }
+        }
+    }
+
+    .respnav {
+        display: none;
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        right: -1000px;
+        transition: .3s;
+
+        .navX {
+            color: white;
+            margin-left: 95%;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            li {
+                border-top: 1px solid gray;
+
+                a {
+                    color: aliceblue;
+                }
+            }
+        }
+    }
+
+    .texts {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        h1 {
+            font-size: 64px;
+            font-weight: 900;
+            color: rgb(32, 87, 32);
+        }
+
+        .multipurpose {
+            font-size: 48px;
+            font-weight: 100;
+        }
+
+        button {
+            padding: 15px 50px;
+            border: none;
+            background-color: rgb(32, 87, 32);
+            color: whitesmoke;
+            border-radius: 5px;
+        }
+    }
+}
+
+.barsUnVisible {
+    display: none;
+}
+
+.xVisible {
+    display: block;
+}
+
+.respnavVisible {
+    transform: translateX(-1000px);
+
+}
+
+@media only screen and (max-width: 900px) {
+    #homeHeader {
+        .navcont {
+            .rightside {
+                ul {
+                    display: none;
+                }
+            }
+
+            .icons {
+                .fa-bars {
+                    display: block;
+                    margin-right: 5px;
+                }
+
+                .fa-x {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .respnav {
+            display: block;
+        }
+
+        .texts {
+            text-align: center;
+        }
+    }
+}
+
+#navShop {
+
+    .navcont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 150vh;
+        margin: 0 auto;
+        padding-top: 30px;
+
+        .leftside {
+
+            font-size: 32px;
+        }
+
+        .rightside {
+            ul {
+                display: flex;
+                gap: 10px;
+
+                li {
+                    a {
+                        color: black;
+                        font-weight: bolder;
+                    }
+                }
+            }
+
+            display: flex;
+            gap: 20px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 10px;
+
+            .fa-bars {
+                display: none;
+            }
+
+            .fa-x {
+                display: none;
+            }
+        }
+    }
+
+    .respnav {
+        display: none;
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        right: -1000px;
+        transition: .3s;
+
+        .navX {
+            color: white;
+            margin-left: 95%;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            li {
+                border-top: 1px solid gray;
+
+                a {
+                    color: aliceblue;
+                }
+            }
+        }
+    }
+
+}
+
+.barsUnVisible {
+    display: none;
+}
+
+.xVisible {
+    display: block;
+}
+
+.respnavVisible {
+    transform: translateX(-1000px);
+
+}
+
+
+@media only screen and (max-width: 900px) {
+    #headerShop {
+        #navShop {
+            .navcont {
+                .rightside {
+                    ul {
+                        display: none;
+                    }
+                }
+
+                .icons {
+                    .fa-bars {
+                        display: block;
+                        margin-right: 5px;
+                    }
+
+                    .fa-x {
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .respnav {
+                display: block;
+            }
+
+            .texts {
+                text-align: center;
+            }
+        }
+    }
+}

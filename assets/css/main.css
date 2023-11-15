@@ -1,0 +1,824 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+* body .leftside {
+  font-weight: bold;
+}
+
+#homeHeader {
+  background-image: url(https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Banner.jpg);
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+#homeHeader .navcont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 150vh;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+#homeHeader .navcont .leftside {
+  font-size: 32px;
+}
+#homeHeader .navcont .rightside {
+  display: flex;
+  gap: 20px;
+}
+#homeHeader .navcont .rightside ul {
+  display: flex;
+  gap: 10px;
+}
+#homeHeader .navcont .rightside ul li a {
+  color: black;
+  font-weight: bolder;
+}
+#homeHeader .navcont .icons {
+  display: flex;
+  gap: 10px;
+}
+#homeHeader .navcont .icons .fa-bars {
+  display: none;
+}
+#homeHeader .navcont .icons .fa-x {
+  display: none;
+}
+#homeHeader .respnav {
+  display: none;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  right: -1000px;
+  transition: 0.3s;
+}
+#homeHeader .respnav .navX {
+  color: white;
+  margin-left: 95%;
+}
+#homeHeader .respnav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#homeHeader .respnav ul li {
+  border-top: 1px solid gray;
+}
+#homeHeader .respnav ul li a {
+  color: aliceblue;
+}
+#homeHeader .texts {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#homeHeader .texts h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: rgb(32, 87, 32);
+}
+#homeHeader .texts .multipurpose {
+  font-size: 48px;
+  font-weight: 100;
+}
+#homeHeader .texts button {
+  padding: 15px 50px;
+  border: none;
+  background-color: rgb(32, 87, 32);
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.barsUnVisible {
+  display: none;
+}
+
+.xVisible {
+  display: block;
+}
+
+.respnavVisible {
+  transform: translateX(-1000px);
+}
+
+@media only screen and (max-width: 900px) {
+  #homeHeader .navcont .rightside ul {
+    display: none;
+  }
+  #homeHeader .navcont .icons .fa-bars {
+    display: block;
+    margin-right: 5px;
+  }
+  #homeHeader .navcont .icons .fa-x {
+    margin-right: 5px;
+  }
+  #homeHeader .respnav {
+    display: block;
+  }
+  #homeHeader .texts {
+    text-align: center;
+  }
+}
+#navShop .navcont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 150vh;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+#navShop .navcont .leftside {
+  font-size: 32px;
+}
+#navShop .navcont .rightside {
+  display: flex;
+  gap: 20px;
+}
+#navShop .navcont .rightside ul {
+  display: flex;
+  gap: 10px;
+}
+#navShop .navcont .rightside ul li a {
+  color: black;
+  font-weight: bolder;
+}
+#navShop .navcont .icons {
+  display: flex;
+  gap: 10px;
+}
+#navShop .navcont .icons .fa-bars {
+  display: none;
+}
+#navShop .navcont .icons .fa-x {
+  display: none;
+}
+#navShop .respnav {
+  display: none;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  right: -1000px;
+  transition: 0.3s;
+}
+#navShop .respnav .navX {
+  color: white;
+  margin-left: 95%;
+}
+#navShop .respnav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#navShop .respnav ul li {
+  border-top: 1px solid gray;
+}
+#navShop .respnav ul li a {
+  color: aliceblue;
+}
+
+.barsUnVisible {
+  display: none;
+}
+
+.xVisible {
+  display: block;
+}
+
+.respnavVisible {
+  transform: translateX(-1000px);
+}
+
+@media only screen and (max-width: 900px) {
+  #headerShop #navShop .navcont .rightside ul {
+    display: none;
+  }
+  #headerShop #navShop .navcont .icons .fa-bars {
+    display: block;
+    margin-right: 5px;
+  }
+  #headerShop #navShop .navcont .icons .fa-x {
+    margin-right: 5px;
+  }
+  #headerShop #navShop .respnav {
+    display: block;
+  }
+  #headerShop #navShop .texts {
+    text-align: center;
+  }
+}
+footer .cont {
+  display: flex;
+  margin: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .cont .earthstore {
+  font-size: 20px;
+  font-weight: bold;
+}
+footer .cont ul {
+  display: flex;
+  gap: 5px;
+}
+footer .cont ul li a {
+  font-size: 13px;
+  color: black;
+}
+
+@media only screen and (max-width: 900px) {
+  footer .cont {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+#shopfooter .cont {
+  display: flex;
+  margin: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+#shopfooter .cont .earthstore {
+  font-size: 20px;
+  font-weight: bold;
+}
+#shopfooter .cont ul {
+  display: flex;
+  gap: 5px;
+}
+#shopfooter .cont ul li a {
+  font-size: 13px;
+  color: black;
+}
+
+@media only screen and (max-width: 900px) {
+  #shopfooter .cont {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+body {
+  position: relative;
+}
+
+#posters {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+#posters .postercont {
+  max-width: 300px;
+  min-height: 400px;
+}
+#posters .postercont .imgcont {
+  position: relative;
+}
+#posters .postercont .imgcont img {
+  width: 100%;
+}
+#posters .postercont .imgcont:hover .icon {
+  opacity: 0.8;
+}
+#posters .postercont .imgcont .icon {
+  position: absolute;
+  padding: 5px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+  top: 10px;
+  right: 3px;
+  transition: 0.4s;
+}
+#posters .postercont .imgcont .icon:hover .message {
+  opacity: 1;
+}
+#posters .postercont .imgcont .icon .message {
+  opacity: 0;
+  position: absolute;
+  width: 55px;
+  border-radius: 4px;
+  background-color: rgb(22, 121, 47);
+  color: aliceblue;
+  text-align: center;
+  left: -60px;
+  top: 0;
+  font-size: 12px;
+  transition: 0.2s;
+}
+#posters .postercont .posterstxt {
+  font-size: 12px;
+  color: gray;
+  padding: 5px 0;
+}
+#posters .postercont .posterV {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 5px 0;
+}
+#posters .postercont .price {
+  font-size: 12px;
+  color: rgb(112, 112, 112);
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+#customers {
+  max-width: 80%;
+  margin: 30px auto;
+}
+#customers h1 {
+  margin-left: 12%;
+}
+#customers .cardcont {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#customers .cardcont .icon {
+  color: rgb(62, 216, 100);
+  font-size: 32px;
+  padding: 3px;
+  width: max-content;
+}
+#customers .cardcont .card {
+  max-width: 300px;
+  min-height: 160px;
+  position: relative;
+}
+#customers .cardcont .card .name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#giveTheGift {
+  background-image: url(https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Banner.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+#giveTheGift .cont {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  gap: 15px;
+}
+#giveTheGift .cont button {
+  width: 180px;
+  height: 40px;
+  background-color: green;
+  border: none;
+  color: white;
+  transition: 0.3s;
+}
+#giveTheGift .cont button:hover {
+  background-color: rgb(82, 153, 82);
+  cursor: pointer;
+}
+#giveTheGift .cont h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#advantages {
+  min-height: 15vh;
+}
+#advantages .cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+#advantages .cont > div {
+  display: flex;
+  place-items: center;
+  padding: 10px 60px;
+  position: relative;
+}
+#advantages .cont > div .icon {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  background-color: rgb(20, 85, 20);
+  width: 30px;
+  height: 30px;
+  font-size: 19px;
+  border-radius: 50%;
+  color: aliceblue;
+  text-align: center;
+}
+#advantages .cont > div .icon i {
+  margin-top: 5px;
+}
+#advantages .cont .n2 {
+  border-left: 1px solid rgb(194, 189, 189);
+}
+#advantages .cont .n3 {
+  border-left: 1px solid rgb(194, 189, 189);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  background-color: aliceblue;
+  height: 100vh;
+  z-index: 2;
+  border-left: 1px solid black;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.sidebar .bartop {
+  display: flex;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  justify-content: space-between;
+}
+.sidebar .bartop .txt {
+  color: rgb(24, 70, 107);
+  font-weight: 900;
+}
+.sidebar .barcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 87%;
+}
+.sidebar .barfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .barfooter button {
+  padding: 7px 14px;
+  border: none;
+  background-color: rgb(21, 99, 21);
+  color: white;
+  transition: 0.2s;
+}
+.sidebar .barfooter button:hover {
+  background-color: rgb(66, 167, 66);
+}
+
+.sidebarVisible {
+  transform: translateX(-300px);
+}
+
+@media only screen and (max-width: 900px) {
+  #posters {
+    flex-direction: column;
+  }
+  #customers {
+    flex-direction: column;
+  }
+  #customers .cardcont {
+    flex-direction: column;
+  }
+  #advantages {
+    flex-direction: column;
+  }
+  #advantages .cont {
+    flex-direction: column;
+  }
+  #advantages .cont .card {
+    flex-direction: column;
+    position: static;
+    border: none;
+    gap: 5px;
+    width: 100%;
+  }
+  #advantages .cont .card .icon {
+    position: static;
+  }
+  #advantages .cont .n2 {
+    border-top: 1px solid gray;
+  }
+  #advantages .cont .n3 {
+    border-top: 1px solid gray;
+  }
+}
+#headerShop .respnav {
+  display: none;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  right: -1000px;
+  transition: 0.3s;
+}
+#headerShop .respnav .navX {
+  color: white;
+  margin-left: 95%;
+}
+#headerShop .respnav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#headerShop .respnav ul li {
+  border-top: 1px solid gray;
+}
+#headerShop .respnav ul li a {
+  color: aliceblue;
+}
+
+main {
+  margin-bottom: 4%;
+  display: flex;
+}
+main .sideleft {
+  margin: 4%;
+  max-width: 30%;
+  border-right: 1px solid black;
+  padding-right: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+main .sideleft #search {
+  padding-top: 50px;
+}
+main .sideleft #search form {
+  display: flex;
+  gap: 5px;
+}
+main .sideleft #search form input {
+  padding: 3px;
+}
+main .sideleft #search form button {
+  border: none;
+  padding: 6px;
+  background-color: rgb(82, 156, 82);
+}
+main .sideleft .range-slider {
+  margin-top: 20px;
+  height: 5px;
+  position: relative;
+  background-color: #e1e9f6;
+  border-radius: 2px;
+}
+main .sideleft .range-selected {
+  height: 100%;
+  left: 30%;
+  right: 30%;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #1b53c0;
+}
+main .sideleft .range-input {
+  position: relative;
+}
+main .sideleft .range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -7px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+main .sideleft .range-input input::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid #1b53c0;
+  background-color: #fff;
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+main .sideleft .range-input input::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid #1b53c0;
+  background-color: #fff;
+  pointer-events: auto;
+  -moz-appearance: none;
+}
+main .sideleft .range-price {
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sideleft .range-price label {
+  margin-right: 5px;
+}
+main .sideleft .range-price input {
+  width: 55px;
+  padding: 5px;
+}
+main .sideleft .range-price input:first-of-type {
+  margin-right: 15px;
+}
+main .sideleft #categories .catergories {
+  font-weight: bold;
+  font-size: xx-large;
+}
+main .sideleft #categories div {
+  padding: 10px;
+}
+main .sideleft #categories div a {
+  color: rgb(35, 131, 35);
+  transition: 0.2s;
+}
+main .sideleft #categories div a:hover {
+  color: black;
+}
+main .sideright {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  padding-top: 3.5%;
+  padding-right: 3%;
+  display: flex;
+  align-items: center;
+}
+main .sideright .text {
+  color: green;
+}
+main .sideright .text a {
+  color: black;
+}
+main .sideright h1 {
+  color: rgb(67, 150, 67);
+  font-weight: bold;
+  font-size: 50px;
+}
+main .sideright #posters {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 900px) {
+  #homeHeader .navcont .rightside ul {
+    display: none;
+  }
+  #homeHeader .navcont .icons .fa-bars {
+    display: block;
+    margin-right: 5px;
+  }
+  #homeHeader .navcont .icons .fa-x {
+    margin-right: 5px;
+  }
+  #homeHeader .respnav {
+    display: block;
+  }
+  #homeHeader .texts {
+    text-align: center;
+  }
+}
+#navShop .navcont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 150vh;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+#navShop .navcont .leftside {
+  font-size: 32px;
+}
+#navShop .navcont .rightside {
+  display: flex;
+  gap: 20px;
+}
+#navShop .navcont .rightside ul {
+  display: flex;
+  gap: 10px;
+}
+#navShop .navcont .rightside ul li a {
+  color: black;
+  font-weight: bolder;
+}
+#navShop .navcont .icons {
+  display: flex;
+  gap: 10px;
+}
+#navShop .navcont .icons .fa-bars {
+  display: none;
+}
+#navShop .navcont .icons .fa-x {
+  display: none;
+}
+#navShop .respnav {
+  display: none;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  right: -1000px;
+  transition: 0.3s;
+}
+#navShop .respnav .navX {
+  color: white;
+  margin-left: 95%;
+}
+#navShop .respnav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#navShop .respnav ul li {
+  border-top: 1px solid gray;
+}
+#navShop .respnav ul li a {
+  color: aliceblue;
+}
+
+.barsUnVisible {
+  display: none;
+}
+
+.xVisible {
+  display: block;
+}
+
+.respnavVisible {
+  transform: translateX(-1000px);
+}
+
+@media only screen and (max-width: 900px) {
+  #headerShop #navShop .navcont .rightside ul {
+    display: none;
+  }
+  #headerShop #navShop .navcont .icons .fa-bars {
+    display: block;
+    margin-right: 5px;
+  }
+  #headerShop #navShop .navcont .icons .fa-x {
+    margin-right: 5px;
+  }
+  #headerShop #navShop .texts {
+    text-align: center;
+  }
+  #headerShop .respnav {
+    display: block;
+  }
+  main {
+    flex-direction: column;
+  }
+  main .sideleft {
+    margin: 0;
+    max-width: 100%;
+    border-bottom: 1px solid black;
+    padding-right: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-bottom: 50px;
+  }
+  main .sideright {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    gap: 20px;
+  }
+  main .sideright ul {
+    display: flex;
+    gap: 10px;
+  }
+  main .sideright ul li a {
+    color: black;
+    font-weight: bolder;
+  }
+  main .sideright #posters {
+    grid-template-columns: 1fr;
+  }
+  main .icons {
+    display: flex;
+    gap: 10px;
+  }
+  main .icons .fa-bars {
+    display: none;
+  }
+  main .icons .fa-x {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

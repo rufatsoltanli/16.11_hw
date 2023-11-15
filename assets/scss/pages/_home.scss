@@ -1,0 +1,289 @@
+body {
+    position: relative;
+}
+
+#posters {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    .postercont {
+        max-width: 300px;
+        min-height: 400px;
+
+        .imgcont {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            &:hover .icon {
+                opacity: 0.8;
+            }
+
+            .icon {
+                position: absolute;
+                padding: 5px;
+                background-color: white;
+                border-radius: 50%;
+                opacity: 0;
+                top: 10px;
+                right: 3px;
+                transition: .4s;
+
+                &:hover .message {
+                    opacity: 1;
+                }
+
+                .message {
+                    opacity: 0;
+                    position: absolute;
+                    width: 55px;
+                    border-radius: 4px;
+                    background-color: rgb(22, 121, 47);
+                    color: aliceblue;
+                    text-align: center;
+                    left: -60px;
+                    top: 0;
+                    font-size: 12px;
+                    transition: .2s;
+
+                }
+            }
+        }
+
+        .posterstxt {
+            font-size: 12px;
+            color: gray;
+            padding: 5px 0;
+        }
+
+        .posterV {
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            padding: 5px 0;
+        }
+
+        .price {
+            font-size: 12px;
+            color: rgb(112, 112, 112);
+            font-weight: bold;
+
+            padding: 5px 0;
+        }
+    }
+}
+
+#customers {
+    max-width: 80%;
+    margin: 30px auto;
+
+    h1 {
+        margin-left: 12%;
+    }
+
+    .cardcont {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+            color: rgb(62, 216, 100);
+            font-size: 32px;
+            padding: 3px;
+            width: max-content;
+        }
+
+        .card {
+            max-width: 300px;
+            min-height: 160px;
+            position: relative;
+
+            .name {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+#giveTheGift {
+    background-image: url(https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Banner.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+    .cont {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        gap: 15px;
+
+        button {
+            width: 180px;
+            height: 40px;
+            background-color: green;
+            border: none;
+            color: white;
+            transition: .3s;
+
+            &:hover {
+                background-color: rgb(82, 153, 82);
+                cursor: pointer;
+            }
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+    }
+}
+
+#advantages {
+    min-height: 15vh;
+
+    .cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+        &>div {
+            display: flex;
+            place-items: center;
+            padding: 10px 60px;
+            position: relative;
+
+            .icon {
+                position: absolute;
+                top: 0;
+                left: 5%;
+                background-color: rgb(20, 85, 20);
+                width: 30px;
+                height: 30px;
+                font-size: 19px;
+                border-radius: 50%;
+                color: aliceblue;
+                text-align: center;
+
+                i {
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .n2 {
+            border-left: 1px solid rgb(194, 189, 189);
+        }
+
+        .n3 {
+            border-left: 1px solid rgb(194, 189, 189);
+        }
+    }
+
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    background-color: aliceblue;
+    height: 100vh;
+    z-index: 2;
+    border-left: 1px solid black;
+    overflow: hidden;
+    transition: .4s;
+
+    .bartop {
+        display: flex;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        justify-content: space-between;
+
+        .txt {
+            color: rgb(24, 70, 107);
+            font-weight: 900;
+        }
+    }
+
+    .barcontent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 87%;
+    }
+
+    .barfooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            padding: 7px 14px;
+            border: none;
+            background-color: rgb(21, 99, 21);
+            color: white;
+            transition: .2s;
+
+            &:hover {
+                background-color: rgb(66, 167, 66);
+
+            }
+        }
+    }
+}
+
+.sidebarVisible {
+    transform: translateX(-300px);
+    
+}
+@media only screen and (max-width: 900px){
+#posters{
+    flex-direction: column;
+}
+#customers{
+    flex-direction: column;
+    .cardcont{
+        flex-direction: column;
+    }
+    
+}
+#advantages{
+    flex-direction: column;
+
+    .cont{
+        flex-direction: column;
+        .card{
+            flex-direction: column;
+            position: static;
+            border: none    ;
+            gap: 5px;
+            width: 100%;
+            .icon{
+                position: static;
+            }
+        }
+        .n2{
+            border-top: 1px solid gray;
+            
+        }
+        .n3{
+            border-top: 1px solid gray;
+            
+        }
+    }
+}
+}

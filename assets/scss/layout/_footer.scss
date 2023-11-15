@@ -1,0 +1,69 @@
+footer {
+    .cont {
+        display: flex;
+        margin: 40px;
+        align-items: center;
+        justify-content: space-around;
+
+        .earthstore {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        ul {
+            display: flex;
+            gap: 5px;
+
+            li {
+                a {
+                    font-size: 13px;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    footer {
+        .cont {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+#shopfooter {
+    .cont {
+        display: flex;
+        margin: 40px;
+        align-items: center;
+        justify-content: space-around;
+
+        .earthstore {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        ul {
+            display: flex;
+            gap: 5px;
+
+            li {
+                a {
+                    font-size: 13px;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #shopfooter {
+        .cont {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
